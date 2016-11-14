@@ -3,7 +3,7 @@ import json
 
 with open('hist_split.json') as input_f:
 	data = json.load(input_f)['train']
-	sentences = [ [w[0] for w in sent[0]] for sent in data]
+	sentences = [ [w[0] for w in sent[0] if w[0] is not None] for sent in data]
 
 model = gensim.models.Word2Vec(size=100, window=5, min_count=1)
 model.build_vocab(sentences)

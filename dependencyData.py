@@ -32,7 +32,7 @@ class DependencyData:
       next_list = []
 
       while this_list:
-        this_id = this_list.pop()
+        this_id = this_list.pop(0)
         sorted_dat.append(this_id)
         next_list = next_list + down_edges[this_id]
         if not this_list:

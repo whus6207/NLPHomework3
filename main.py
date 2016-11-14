@@ -24,7 +24,7 @@ if __name__ == '__main__':
     parser.add_argument('--load')
     parser.add_argument('--save')
     parser.add_argument('--num_batches', type=int, default=25)
-    parser.add_argument('--num_epochs', type=int, default=25)    
+    parser.add_argument('--num_epochs', type=int, default=26)    
     parser.add_argument('-d' ,'--dimension', type=int, default=100)
     parser.add_argument('--wrong_ans', type=int, default=100)
     parser.add_argument('--do_val', type=int, default=5)    
